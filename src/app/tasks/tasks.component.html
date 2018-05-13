@@ -1,0 +1,12 @@
+<h2>My Daily Tasks</h2>
+<ul class="tasks">
+    <li *ngFor="let task of tasks">
+        <a routerLink="/detail/{{task.id}}">
+            <span class="badge">{{task.id}}</span>{{task.title}}
+        </a>
+        <button class="delete" title="delete task">x</button>
+    </li>
+
+
+</ul>
+
